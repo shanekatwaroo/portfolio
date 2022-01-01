@@ -309,23 +309,23 @@
 }
 
 .main__content h2 {
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 32px;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .main__content h1 {
     font-size: 5rem;
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -525,6 +525,42 @@
     transition: 0.3s ease-in;
 }
 
+.icon__cover {
+    z-index: 10;
+    position:absolute;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048);
+    transition: 0.3s ease-in;
+}
+
+.projects__card:nth-child(2) .icon__cover,
+.projects__card:nth-child(4) .icon__cover,
+.projects__card:nth-child(6) .icon__cover {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.icon__cover i {
+    position: absolute;
+    font-size: 150px;
+    left: 60px;
+}
+
+.icon__cover:hover{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+
+
 .projects__card:nth-child(2),
 .projects__card:nth-child(4),
 .projects__card:nth-child(6)  {
@@ -536,6 +572,8 @@
 .projects__card h2 {
     text-align: center;
     margin-top: 25px;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .projects__card h3 {
@@ -566,6 +604,7 @@
     border-radius: 4px;
     background: #131313;
     font-size: 1rem;
+    z-index: 10;
 }
 
 .projects__card button:hover {
@@ -574,7 +613,7 @@
 
 .projects__card:hover {
     transform: scale(1.075);
-    transition: 0.3 ease-in;
+    transition: 0.3 ease;
 }
 
 @media screen and (max-width: 1300px) {
@@ -840,7 +879,11 @@ color: #fff;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    
+    resize: vertical;
+}
+
+.contactForm .inputBox textarea {
+    height: 100px;
 }
 
 .contactForm .inputBox span {
@@ -863,7 +906,7 @@ color: #fff;
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"] {
+.contactForm .inputBox button[type="submit"] {
     width: 100px;
     background: #fff;  /* fallback for old browsers */
     -webkit-background-clip: text;
@@ -875,6 +918,15 @@ color: #fff;
     padding: 10px;
     font-size: 30px;
 }
+.contactForm .inputBox button[type="submit"]:hover{
+    background: #333;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
 
 @media screen and (max-width: 991px) {
     .contact {

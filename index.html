@@ -7,6 +7,7 @@
     content="width=device-width, initial-scale=1.0">
     <title>Shane Katwaroo</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
 </head>
@@ -61,7 +62,6 @@
                     <img src="https://lh3.googleusercontent.com/OTv4b2qB_e2yk7htJvi59e_wJf6cm_xQpJMhTAAxp7TEJhmBpCXo1It7XVkYaK2X24JQxJHUt6l8yrU8ypsKSfpAx5pLCCwIqgcOOr6fp7WrLJixI2TONVmrWxclJblCNj-L6WH8Lw=w2400"></div>
             </div>
             <div class="main__content">
-                <h1>Welcome!</h1>
                 <h2>Here's a little bit about me: </h2>
                 <p>I'm Shane Katwaroo, a recent graduate looking to pursue a career in data analytics. Not only am I passionate about data science, but I feel it's important for organizations to make effective use of their data! This ranges from being able to prepare data effectively -- to eventually creating an impactful presentation of this data. With the advantage of being well versed in programs such as SQL, python and Tableau, I can support in the efforts to prepare and capture data in an effective manner! This website features my portfolio, resume, GitHub, as well as a contact page to reach out to me.</p>
                 <button class="main__btn"><a href="#contact">view socials</a></button>
@@ -75,36 +75,54 @@
         <h2>Feel free to visit my GitHub page, which includes many more projects!</h2>
         <div class="projects__wrapper">
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fas fa-chart-line"></i>
+                </div>
                 <h2>Customer Analysis</h2>
                 <h3>Programs used: Python (Matplotlib, Numpy)</h3>
                 <p>This project entails the analysis of a consumer database for a supermarket. I decided to use python, being that pythons libraries can tackle both data cleaning and visualization. For this project specifically, I incorporated libraries such as pandas to clean data, then matplotlib and numpy to visualize some of the kpi's that I wanted to solve.</p>
                 <a href="https://github.com/shanekatwaroo/CustomerAnalysis" class="projects__btn"><button>GitHub</button></a>
             </div>
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fas fa-siren-on"></i>
+                </div>
                 <h2>Police Violence Analysis</h2>
                 <h3>Programs used: Python, SQL, Tableau</h3>
                 <p>This project entails a complete analysis of police violence cases across the United States over the past 5 years. It mainly focuses on the discrimination and racial gap between these violence cases (mainly minority-targeted). This project was completed the use of cleaning the data with python, solving KPI's with the use of a  SQL server, and finally visualizing the results with Tableau.</p>
                 <a href="https://github.com/shanekatwaroo/PoliceViolenceProject" class="projects__btn"><button>GitHub</button></a>
             </div>
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
                 <h2>Natural Disasters</h2>
                 <h3>Programs used: Pandas library, SQL, Tableau </h3>
                 <p>This project features an analysis of natural disasters in the past 50 years (1970-2020). The programs used for this project include python for data cleaning through the use of the pandas module, connecting to a MySQL database to answer some KPI's about the data, and finally Tableau to visually represent the KPI findings. Click the button below to view the full GitHub repo!</p>
                 <a href="https://github.com/shanekatwaroo/Natural-Disasters" class="projects__btn"><button>GitHub</button></a>
             </div>
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fas fa-head-side-brain"></i>
+                </div>
                 <h2>Workplace Mental Health</h2>
                 <h3>Programs used: Python, SQL</h3>
                 <p>I recently read an article discussing the adverse effects of mental health in the workplace, specifically for tech companies. Because of this, I decided to find a dataset that elaborates on the idea of employees not being able to perform up to par in the workplace due to these mental health problems. The dataset I used measures attitudes towards mental health and frequency of mental health disorders in the tech workplace.</p>
                 <a href="https://github.com/shanekatwaroo/Workplace-Mental-Health" class="projects__btn"><button>GitHub</button></a>
             </div>
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fad fa-music"></i>
+                </div>
                 <h2>Music Throughout Time</h2>
                 <h3>Programs used: Seaborn, Matplotlib, Tableau</h3>
                 <p>This is a personal project I completed to get more familiar with creating visuals without the use of Tableau. Instead, I utilized the seaborn and matplotlib libraries in python. Using two datasets, I analyzed the changes in music over the past few decades. This can range from aspects such as changes in instrumentalness, duration, tempo, and many more. </p>
                 <a href="https://github.com/shanekatwaroo/Music-Overtime" class="projects__btn"><button>GitHub</button></a>
             </div>
             <div class="projects__card">
+                <div class="icon__cover">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
                 <h2>Python Job Search Script</h2>
                 <h3>Programs used: Python(Beautiful Soup)</h3>
                 <p>This script was created to help me improve on web-scraping. jobsearch.py is a simple python script used to scrape pages on Indeed in order to find recent job listings. When running the script, simply type in the desired job and zip code. Afterwards, a list of nearby jobs will show up and allow you to get more info on a selected job. Finally, the script gives a link to the original Indeed post so that the user can apply to said job.</p>
@@ -189,22 +207,23 @@
                     </div>
                 </div>
                 <div class="contactForm">
-                    <form>
+                    <form action="https://formsubmit.co/katwarooshane@gmail.com" method="POST" />
+                        <input type="hidden" name="_captcha" value="false">
                         <h3>Send Message</h3>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="name" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="email" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <textarea name ="message" required="required"></textarea>
                             <span>Type your message...</span>
                         </div>
                         <div class="inputBox">
-                            <input type="submit" name="" value="Send">
+                            <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
