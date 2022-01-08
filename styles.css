@@ -625,6 +625,12 @@
     .projects__wrapper {
         grid-template-columns: 1fr;
     }
+    .icon__cover {
+        opacity: 0;
+    }
+    .icon__cover i {
+        opacity: 0;
+    }
 }
 
 
